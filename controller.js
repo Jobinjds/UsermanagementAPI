@@ -166,7 +166,13 @@ const updateData = async (req, res) => {
     });
   } catch (error) {
     console.error(error);
-    res.status(500).json({ error: "Database error" });
+    res.json({ 
+     
+      message:"Database Error",
+      status:"Error",
+      statuscode:"500"
+
+     });
   }
 };
 
